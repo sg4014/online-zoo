@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../../assets/fonts/roboto-v30-latin-300.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../assets/fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../../assets/fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../../assets/fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 114px;
+  line-height: 80%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 120%;
+}
+
+h3 {
+  font-style: 36px;
+  line-height: 130%;
+}
+
+.logo {
+  font-size: 19px;
+  line-height: 120%;
+  padding: 3.55px 4.75px;
+  text-align: center;
+  height: 52px;
+  width: 82px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background: url("../../assets/icons/bamboo.svg") no-repeat;
+  background-position: bottom 6px left 9px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0px 220px;
+}
+
+.header {
+  background: #000000;
+}
+.header__container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

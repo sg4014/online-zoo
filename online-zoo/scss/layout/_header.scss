@@ -1,0 +1,11 @@
+.header {
+  background: #000000;
+
+  &__container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+

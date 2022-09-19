@@ -1,3 +1,9 @@
+.backstage__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -153,6 +159,8 @@ h3 {
   color: #4b9200;
 }
 
+/* Hero Section
+================================================== */
 .hero {
   min-height: 700px;
   background-image: url("../../assets/images/giant_panda.jpg");
@@ -201,6 +209,38 @@ h3 {
 }
 .hero__btn {
   margin-right: 97px;
+}
+
+/* Backstage Section
+================================================== */
+.backstage {
+  position: relative;
+  padding: 140px 0px 180px;
+  background: url("../../assets/images/flower_foto1.jpg");
+  background-repeat: no-repeat;
+  background-position: right 0 top 12px;
+}
+.backstage__container {
+  display: flex;
+  gap: 87px;
+}
+.backstage__image {
+  flex: 0 1 609px;
+  max-height: 403px;
+}
+.backstage__text {
+  flex: 0 1 465px;
+}
+.backstage__title {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.backstage__paragraph1 {
+  line-height: 130%;
+  margin-bottom: 54px;
+}
+.backstage__subtitle {
+  margin-bottom: 34px;
 }
 
 /*# sourceMappingURL=main.css.map */

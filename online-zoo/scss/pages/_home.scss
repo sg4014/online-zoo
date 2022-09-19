@@ -1,5 +1,7 @@
 @use '../abstracts' as *;
 
+/* Hero Section
+================================================== */
 .hero {
   min-height: 700px;
   background-image: url('../../assets/images/giant_panda.jpg');
@@ -50,5 +52,44 @@
 
   &__btn {
     margin-right: 97px;
+  }
+}
+
+/* Backstage Section
+================================================== */
+.backstage {
+  position: relative;
+  padding: 140px 0px 180px;
+  background: url('../../assets/images/flower_foto1.jpg');
+  background-repeat: no-repeat;
+  background-position: right 0 top 12px;
+
+  &__container {
+    display: flex;
+    gap: 87px;
+  }
+
+  &__image {
+    flex: 0 1 609px;
+    max-height: 403px;
+  }
+
+  &__text {
+    flex: 0 1 465px;
+  }
+
+  &__title {
+    font-weight: $fw-regular;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph1 {
+    line-height: 130%;
+    margin-bottom: 54px;
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    margin-bottom: 34px;
   }
 }

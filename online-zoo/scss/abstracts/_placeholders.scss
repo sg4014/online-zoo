@@ -1,0 +1,7 @@
+@use './variables' as *;
+
+%subtitle {
+  font-weight: $fw-regular;
+  font-size: 24px;
+  line-height: 120%;
+}

@@ -144,10 +144,17 @@ h3 {
 }
 
 .hero {
+  min-height: 700px;
   background-image: url("../../assets/images/giant_panda.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 700px;
+  background-position: center;
+}
+@media (max-width: 1600px) {
+  .hero {
+    background-size: 1600px 780px;
+    background-position: bottom;
+  }
 }
 .hero__container {
   display: flex;

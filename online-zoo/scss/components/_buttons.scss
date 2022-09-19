@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+  width: 298px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;  
+  color: #ffffff;
+  text-transform: uppercase;
+  background: $orange_btn_grad;
+}

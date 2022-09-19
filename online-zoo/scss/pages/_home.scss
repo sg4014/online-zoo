@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.hero {
+  background-image: url('../../assets/images/giant_panda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 106.5px;
+    font-weight: $fw-bold;
+    line-height: 80px;
+    color: #ffffff;
+    margin-top: 86px;
+    margin-bottom: 60px;
+    
+    span {
+      color: $yellow;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 9px;
+      right: 108px;
+      width: 465px;
+      height: 465px;
+      border-radius: 50%;
+      background: $orange_btn_grad;
+      transform: translateZ(-10px);
+    }
+  }
+
+  &__btn {
+    margin-right: 97px;
+  }
+}

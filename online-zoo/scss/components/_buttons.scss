@@ -9,5 +9,16 @@
   border-radius: 25px;  
   color: #ffffff;
   text-transform: uppercase;
-  background: $orange_btn_grad;
+  background: $btn_default;
+  cursor: pointer;
+
+  &:hover {
+    background: $btn_hover;
+  }
+  &:active {
+    background: $btn_active;
+  }
+  &:disabled {
+    background: $gray;
+  }
 }

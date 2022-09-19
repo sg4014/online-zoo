@@ -1,5 +1,18 @@
+@use '../abstracts/variables' as *;
+
 .menu {
   &__list {
     display: flex;
+    gap: 58px;
+  }
+
+  &__link {
+    &_current {
+      color: $orange;
+      cursor: default;
+    }
+    &:hover {
+      color: $green;
+    }
   }
 }

@@ -45,7 +45,7 @@
       width: 465px;
       height: 465px;
       border-radius: 50%;
-      background: $btn_default;
+      background: $orange_btn_grad;
       transform: translateZ(-10px);
     }
   }
@@ -91,5 +91,68 @@
   &__subtitle {
     @extend %subtitle;
     margin-bottom: 34px;
+  }
+}
+
+/* Pets Section
+================================================== */
+// Skip for now
+.pets {
+  min-height: 1105px;
+}
+
+/* Feed Section
+================================================== */
+.feed {
+  background: $orange_bg_grad;
+  padding: 69px 0px 100px;
+
+  &__content {
+    background: $frosted_glass_white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 20px;
+  }
+
+  &__title {
+    color: #fe9013;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle,
+  &__paragraph {
+    align-self: flex-start;
+    margin-left: 100px;
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    margin-bottom: 40px;
+  }
+
+  &__paragraph {
+    a {
+      color: inherit;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #fe9013;
+      &:hover {
+        color: $orange_dark;
+      }
+    }
+    &:first-of-type {
+      font-weight: $fw-medium;
+      margin-bottom: 10px;
+    }
+
+    &:last-of-type {
+      max-width: 863px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__btn {
+    margin: 60px auto 59px;
   }
 }

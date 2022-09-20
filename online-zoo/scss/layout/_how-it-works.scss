@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.how-it-works {
+  &__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+  }
+
+  &__step {
+    position: relative;
+    width: 168px;
+    height: 244px;
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      top: 62px;
+      left: calc(100% + 30px);
+      width: 69px;
+      height: 36px;
+      background: url('../../assets/icons/big_right_arrow.svg');
+    }
+  }
+
+  &__icon-box {
+    width: 168px;
+    height: 168px;
+    border: 1px solid $orange;
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}

@@ -1,4 +1,4 @@
-.backstage__subtitle {
+.backstage__subtitle, .feed__subtitle {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
@@ -19,6 +19,7 @@ ul, ol {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: #ffffff;
 }
@@ -60,8 +61,15 @@ body {
   color: #000000;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
 h2 {
   font-size: 48px;
+  font-weight: 400;
   line-height: 120%;
 }
 
@@ -72,7 +80,6 @@ h3 {
 
 .logo {
   font-size: 19px;
-  font-weight: 400;
   font-style: normal;
   text-transform: none;
   text-align: center;
@@ -92,7 +99,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -136,7 +146,6 @@ h3 {
 .header__logo h1 {
   font-size: inherit;
   text-transform: none;
-  font-weight: inherit;
 }
 .header__menu {
   margin-left: 63px;
@@ -157,6 +166,42 @@ h3 {
 }
 .menu__link:hover {
   color: #4b9200;
+}
+
+.how-it-works__title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.how-it-works__steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+}
+.how-it-works__step {
+  position: relative;
+  width: 168px;
+  height: 244px;
+}
+.how-it-works__step:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: calc(100% + 30px);
+  width: 69px;
+  height: 36px;
+  background: url("../../assets/icons/big_right_arrow.svg");
+}
+.how-it-works__icon-box {
+  width: 168px;
+  height: 168px;
+  border: 1px solid #f9804b;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /* Hero Section
@@ -241,6 +286,57 @@ h3 {
 }
 .backstage__subtitle {
   margin-bottom: 34px;
+}
+
+/* Pets Section
+================================================== */
+.pets {
+  min-height: 1105px;
+}
+
+/* Feed Section
+================================================== */
+.feed {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  padding: 69px 0px 100px;
+}
+.feed__content {
+  background: rgba(253, 253, 255, 0.52);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+.feed__title {
+  color: #fe9013;
+  margin-bottom: 30px;
+}
+.feed__subtitle, .feed__paragraph {
+  align-self: flex-start;
+  margin-left: 100px;
+}
+.feed__subtitle {
+  margin-bottom: 40px;
+}
+.feed__paragraph a {
+  color: inherit;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fe9013;
+}
+.feed__paragraph a:hover {
+  color: #e47209;
+}
+.feed__paragraph:first-of-type {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.feed__paragraph:last-of-type {
+  max-width: 863px;
+  margin-bottom: 60px;
+}
+.feed__btn {
+  margin: 60px auto 59px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.footer {
+  background: #111115;
+
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__logo {
+    grid-column: 1;
+    margin-bottom: 68px;
+  }
+
+  &__menu {
+    grid-column: 2;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  &__donate-btn {
+    grid-column: 1;
+    border-radius: 5px;
+    margin-bottom: 44px;
+  }
+
+  &__social-media {
+    grid-column: 1;
+  }
+}

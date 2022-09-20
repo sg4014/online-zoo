@@ -79,6 +79,7 @@ h3 {
 }
 
 .logo {
+  display: block;
   font-size: 19px;
   font-style: normal;
   text-transform: none;
@@ -116,6 +117,22 @@ h3 {
 }
 .btn:disabled {
   background: #767474;
+}
+
+.submit-btn {
+  height: 42px;
+  padding: 10px 39px;
+  color: #000000;
+  background: #f1f3f2;
+  border: 1px solid #333b41;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 140%;
+  cursor: pointer;
+}
+.submit-btn:focus, .submit-btn:hover {
+  color: #4b9200;
+  border-color: #4b9200;
 }
 
 .wrapper {
@@ -202,6 +219,83 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.social-media__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-media__link {
+  height: 26px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+.social-media__link:hover {
+  color: #4b9200;
+}
+.social-media__link:hover .social-media__icon-box {
+  background: #4b9200;
+}
+.social-media__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 0.5);
+}
+.social-media__icon-box img {
+  width: 16px;
+  height: 16px;
+}
+
+.subscribe-form__email {
+  width: 228px;
+  height: 42px;
+  color: #bdbdbd;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 10px 7px 10px 10px;
+  border: 1px solid #f9804b;
+  border-radius: 2px;
+  outline: none;
+  background: transparent;
+}
+.subscribe-form__email::placeholder {
+  color: inherit;
+}
+.subscribe-form__email:focus {
+  border-color: #4b9200;
+}
+
+.footer {
+  background: #111115;
+}
+.footer__container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__logo {
+  grid-column: 1;
+  margin-bottom: 68px;
+}
+.footer__menu {
+  grid-column: 2;
+  justify-self: center;
+  align-self: flex-end;
+}
+.footer__donate-btn {
+  grid-column: 1;
+  border-radius: 5px;
+  margin-bottom: 44px;
+}
+.footer__social-media {
+  grid-column: 1;
 }
 
 /* Hero Section

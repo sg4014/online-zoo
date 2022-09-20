@@ -25,3 +25,21 @@
     background: $gray;
   }
 }
+
+.submit-btn {
+  height: 42px;
+  padding: 10px 39px;
+  color: #000000;
+  background: $gray_light;
+  border: 1px solid $black_blue;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 140%;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $green;
+    border-color: $green;
+  }
+}

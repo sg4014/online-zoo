@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+.subscribe-form {
+  &__email {
+    width: 228px;
+    height: 42px;
+    color: #bdbdbd;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 10px 7px 10px 10px;
+    border: 1px solid $orange;
+    border-radius: 2px;
+    outline: none;
+    background: transparent;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    &:focus {
+      border-color: $green;
+    }
+  }
+}

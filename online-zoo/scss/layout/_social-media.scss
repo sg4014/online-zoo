@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+
+.social-media {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    height: 26px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    &:hover {
+      color: $green;
+      .social-media__icon-box {
+        background: $green;
+      }
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

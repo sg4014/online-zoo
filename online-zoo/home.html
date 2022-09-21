@@ -199,16 +199,21 @@
         </nav>
 
         <form class="footer__form subscribe-form"> 
-          <label for="userEmail">
+          <label class="subscribe-form__title" for="userEmail">
             Subscribe to our news
           </label>
-          <input class="subscribe-form__email" type="email" name="userEmail" id="userEmail" placeholder="Enter your email" required>
-          <button class="submit-btn" type="submit">
-            Submit
-          </button>
+          <div class="subscribe-form__input-row">
+            <input class="subscribe-form__email" type="email" name="userEmail" id="userEmail" placeholder="Enter your email" required>
+            <button class="subscribe-form__submit-btn submit-btn" type="submit">
+              Submit
+            </button>
+          </div>
         </form>
 
-        <div class="footer__copyright"></div>
+        <div class="footer__copyright">
+          <div class="footer__designer">Designed by Alisa Samborskaya</div>
+          ©RSSchool & ©Yem Digital 2021
+        </div>
       </div>
     </footer>
   </div>

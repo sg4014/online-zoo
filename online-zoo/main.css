@@ -254,7 +254,7 @@ h3 {
 
 .subscribe-form__email {
   width: 228px;
-  height: 42px;
+  height: 100%;
   color: #bdbdbd;
   font-size: 16px;
   line-height: 140%;
@@ -269,6 +269,19 @@ h3 {
 }
 .subscribe-form__email:focus {
   border-color: #4b9200;
+}
+.subscribe-form__title {
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+.subscribe-form__input-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .footer {
@@ -296,6 +309,25 @@ h3 {
 }
 .footer__social-media {
   grid-column: 1;
+}
+.footer__form {
+  grid-row: 1;
+  grid-column: 3;
+  align-self: start;
+  margin-left: 20px;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 232px;
+  color: #767474;
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: end;
+  align-self: end;
+}
+.footer__designer {
+  margin-bottom: 10px;
 }
 
 /* Hero Section

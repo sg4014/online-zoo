@@ -1,6 +1,16 @@
 @use '../abstracts/variables' as *;
 
 .subscribe-form {
+  &:invalid {
+    .subscribe-form__email:focus {
+      border-color: $red;
+    }
+    .subscribe-form__submit-btn {
+      border-color: $red;
+      color: $red;
+    }
+  }
+
   &__email {
     width: 228px;
     height: 100%;
@@ -19,6 +29,14 @@
 
     &:focus {
       border-color: $green;
+    }
+
+    &:focus:invalid {
+      border-color: $red;
+
+      .subscribe-form__submit-btn {
+        border-color: $red;
+      }
     }
   }
 

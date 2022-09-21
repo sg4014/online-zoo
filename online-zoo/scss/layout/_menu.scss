@@ -9,7 +9,7 @@
   &__link {
     &_current {
       color: $orange;
-      cursor: default;
+      pointer-events: none;
     }
     &:hover {
       color: $green;

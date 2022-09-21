@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+
+.slider {
+  position: relative;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 30px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 1324px;
+    top: 403px;
+    left: -82px;
+  }
+
+  &__btn {
+    width: 62px;
+    height: 62px;
+    background: $orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background: $green;
+    }
+  }
+
+  &__left-btn {
+    transform: rotate(180deg);
+  }
+}

@@ -99,6 +99,14 @@
 // Skip for now
 .pets {
   min-height: 1105px;
+
+  &__slider {
+    margin-bottom: 80px;
+  }
+
+  &__btn {
+    margin: 0 auto 100px;
+  }
 }
 
 /* Feed Section

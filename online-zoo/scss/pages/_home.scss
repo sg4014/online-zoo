@@ -99,6 +99,10 @@
 // Skip for now
 .pets {
   min-height: 1105px;
+  background-image: url('../../assets/images/palm_foto.jpg'),
+                    url('../../assets/images/strelitzia.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
 
   &__slider {
     margin-bottom: 80px;

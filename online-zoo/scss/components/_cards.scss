@@ -1,15 +1,37 @@
 @use '../abstracts/variables' as *;
 
 .animal-card {
+  position: relative;
   width: 366px;
   height: 426px;
   border: 1px solid $orange;
   border-radius: 5px;
   color: #000000;
 
+  &:hover {
+    .animal-card__image img {
+      transition: all 0.3s;
+      transform: scale( 1.06 );
+    }
+
+    .animal-card__info {
+      position: relative;
+      transition: all 0.3s;
+      transform: translateY(-100px);
+      color: #ffffff;
+      z-index: 5;
+    }
+
+    &::after {
+      opacity: 0.5;
+      z-index: 2;
+    }
+  }
+
   &__image {
     max-width: 366px;
     height: 366px;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
@@ -35,5 +57,16 @@
     padding: 8px 12px 14px 16px;
     display: flex;
     justify-content: space-between;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 260px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0;
   }
 }

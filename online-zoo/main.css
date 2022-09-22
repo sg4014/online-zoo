@@ -136,15 +136,32 @@ h3 {
 }
 
 .animal-card {
+  position: relative;
   width: 366px;
   height: 426px;
   border: 1px solid #f9804b;
   border-radius: 5px;
   color: #000000;
 }
+.animal-card:hover .animal-card__image img {
+  transition: all 0.3s;
+  transform: scale(1.06);
+}
+.animal-card:hover .animal-card__info {
+  position: relative;
+  transition: all 0.3s;
+  transform: translateY(-100px);
+  color: #ffffff;
+  z-index: 5;
+}
+.animal-card:hover::after {
+  opacity: 0.5;
+  z-index: 2;
+}
 .animal-card__image {
   max-width: 366px;
   height: 366px;
+  overflow: hidden;
 }
 .animal-card__image img {
   width: 100%;
@@ -167,6 +184,16 @@ h3 {
   padding: 8px 12px 14px 16px;
   display: flex;
   justify-content: space-between;
+}
+.animal-card::after {
+  position: absolute;
+  content: "";
+  top: 260px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  opacity: 0;
 }
 
 .slider {

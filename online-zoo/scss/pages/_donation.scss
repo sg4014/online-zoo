@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .panda {
   max-height: 390px;
 
@@ -14,4 +16,40 @@
       object-fit: cover;
     }
   }
+}
+
+.donate {
+  background: $orange_bg_grad;
+  padding-top: 40px;
+  padding-bottom: 180px;
+
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FE9013;
+    margin-bottom: 60px;
+  }
+
+  
 }

@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as *;
+
+.donation-widget {
+  background: $frosted_glass_white;
+  border-radius: 20px;
+  padding: 40px 92px 62px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: $black_blue;
+    margin-bottom: 60px;
+  }
+
+  &__top-block {
+    margin: 0 auto;
+    max-width: 532px;
+    display: flex;
+    gap: 90px;
+  }
+
+  &__stats {
+    min-width: 160px;
+    margin-top: 105px;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: $black_blue;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: -20px;
+      width: 14px;
+      height: 14px;
+      background: url('../../assets/icons/x_icon.svg');
+    }
+  }
+
+  &__diet-count {
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+
+  &__bar-title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+  }
+}

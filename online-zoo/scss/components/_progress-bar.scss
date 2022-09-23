@@ -1,0 +1,93 @@
+@use '../abstracts/variables' as *;
+
+.progress-bar {
+  width: 100%;
+  padding: 0px 26px;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  transform-style: preserve-3d;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 26px;
+    right: 30px;
+    height: 2px;
+    background: #72828E;
+    transform: translateZ(10px);    
+  }
+
+  &__option {
+    transform: translateZ(20px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      input {
+        background: #fe9013;
+        cursor: pointer;
+      }
+
+      label {
+        color: #fe9013;
+      }
+    }
+
+    input {
+      position: relative;
+      -webkit-appearance: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: yellow;
+      &:checked {
+        &::before {
+          display:block;
+        }
+        & + label {
+          color: #fe9013;
+        }
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 40px;
+        height: 40px;
+        background: url('../../assets/icons/roller_icon.svg');
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -20px;
+        left: -20px;
+        &:hover {
+          input {
+            background: #fe9013;
+            cursor: pointer;
+          }
+    
+          label {
+            color: #fe9013;
+          }
+        }
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 30px;
+      left: -5px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+
+.review {
+  padding: 15px 22px 21px 16px;
+  max-width: 293px;
+  max-height: 391px;
+  background: #f5f7f6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  &__meta {
+    display: grid;
+    grid-template-columns: 37px 1fr;
+    grid-template-rows: 19px 18px;
+    column-gap: 10px;
+  }
+
+  &__profile-pic {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  &__place-time {
+    color: #bdbdbd;
+  }
+
+  &__location {
+    margin-right: 6px;
+  }
+
+  &__time {
+    margin-left: 5px;
+  }
+
+  &__text {
+    color: $gray;
+    overflow: hidden;
+  }
+}

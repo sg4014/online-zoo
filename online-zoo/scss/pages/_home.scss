@@ -96,7 +96,6 @@
 
 /* Pets Section
 ================================================== */
-// Skip for now
 .pets {
   min-height: 1105px;
   background-image: url('../../assets/images/palm_foto.jpg'),
@@ -166,5 +165,65 @@
 
   &__btn {
     margin: 60px auto 59px;
+  }
+}
+
+/* Testimonials Section
+================================================== */
+.testimonials {
+  min-height: 920px;
+  padding-top: 140px;
+  padding-bottom: 180px;
+  background: url('../../assets/images/leav_foto.jpg') no-repeat;
+  background-position: bottom -130px right;
+
+  &__title {
+    font-size: 36px;
+    line-height: 130%;
+    color: $black_blue;
+    text-align: center;
+    margin: 0 auto 47px;
+  }
+
+  &__reviews {
+    display: grid;
+    grid-template-columns: repeat(4, 268px);
+    gap: 30px;
+    margin-bottom: 13px;
+  }
+
+  &__line-scroll {
+    width: 100%;
+    height: 8px;
+    padding: 0 280px;
+    margin-bottom: 39px;
+
+    input {
+      -webkit-appearance: none;
+      width: 600px;
+      height: 6px;
+      background: #F5F7F6;
+      border-radius: 5px;
+      outline: 1px solid #fe9013;
+      cursor: pointer;
+      &:hover {
+        outline-color: $orange_dark;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 6px;
+        width: 115px;
+        background: #FE9013;
+        border-radius: 5px;
+        &:hover {
+          background: $orange_dark;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    border-radius: 5px;
   }
 }

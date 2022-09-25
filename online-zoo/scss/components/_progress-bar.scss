@@ -84,9 +84,15 @@
     }
 
     label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #333B41;
       position: absolute;
       top: 30px;
-      left: -5px;
+      left: -25px;
       cursor: pointer;
     }
   }

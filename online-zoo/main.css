@@ -90,7 +90,7 @@ h3 {
   width: 82px;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  background: url("../../assets/icons/bamboo.svg") no-repeat;
+  background: url("./assets/icons/bamboo.svg") no-repeat;
   background-position: bottom 6px left 9px;
 }
 
@@ -317,7 +317,7 @@ h3 {
   right: -20px;
   width: 14px;
   height: 14px;
-  background: url("../../assets/icons/x_icon.svg");
+  background: url("./assets/icons/x_icon.svg");
 }
 .donation-widget__diet-count {
   color: #000000;
@@ -565,7 +565,7 @@ h3 {
   left: calc(100% + 30px);
   width: 69px;
   height: 36px;
-  background: url("../../assets/icons/big_right_arrow.svg");
+  background: url("./assets/icons/big_right_arrow.svg");
 }
 .how-it-works__icon-box {
   width: 168px;
@@ -758,7 +758,7 @@ h3 {
 .backstage {
   position: relative;
   padding: 140px 0px 180px;
-  background: url("../../assets/images/flower_foto1.jpg");
+  background: url("./assets/images/flower_foto1.jpg");
   background-repeat: no-repeat;
   background-position: right 0 top 12px;
 }
@@ -789,7 +789,7 @@ h3 {
 ================================================== */
 .pets {
   min-height: 1105px;
-  background-image: url("../../assets/images/palm_foto.jpg"), url("../../assets/images/strelitzia.jpg");
+  background-image: url("./assets/images/palm_foto.jpg"), url("./assets/images/strelitzia.jpg");
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
 }
@@ -851,7 +851,7 @@ h3 {
   min-height: 920px;
   padding-top: 140px;
   padding-bottom: 180px;
-  background: url("../../assets/images/leav_foto.jpg") no-repeat;
+  background: url("./assets/images/leav_foto.jpg") no-repeat;
   background-position: bottom -130px right;
 }
 .testimonials__title {

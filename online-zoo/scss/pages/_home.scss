@@ -60,7 +60,7 @@
 .backstage {
   position: relative;
   padding: 140px 0px 180px;
-  background: url('../../assets/images/flower_foto1.jpg');
+  background: url('./assets/images/flower_foto1.jpg');
   background-repeat: no-repeat;
   background-position: right 0 top 12px;
 
@@ -98,8 +98,8 @@
 ================================================== */
 .pets {
   min-height: 1105px;
-  background-image: url('../../assets/images/palm_foto.jpg'),
-                    url('../../assets/images/strelitzia.jpg');
+  background-image: url('./assets/images/palm_foto.jpg'),
+                    url('./assets/images/strelitzia.jpg');
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
 
@@ -174,7 +174,7 @@
   min-height: 920px;
   padding-top: 140px;
   padding-bottom: 180px;
-  background: url('../../assets/images/leav_foto.jpg') no-repeat;
+  background: url('./assets/images/leav_foto.jpg') no-repeat;
   background-position: bottom -130px right;
 
   &__title {

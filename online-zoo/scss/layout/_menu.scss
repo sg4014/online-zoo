@@ -4,6 +4,9 @@
   &__list {
     display: flex;
     gap: 58px;
+    @media (max-width: $bp-1) {
+      gap: 48px;
+    }
   }
 
   &__link {

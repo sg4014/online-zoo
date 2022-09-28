@@ -1,16 +1,38 @@
+@use '../abstracts/variables' as *;
+
 .header {
   background: #000000;
+  @media (max-width: $bp-2) {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+  }
 
   &__container {
     min-height: 80px;
     display: flex;
     align-items: center;
+    @media (max-width: $bp-2) {
+      justify-content: space-between;
+      min-height: 0px;
+      height: 34px;
+    }
   }
 
   &__logo {
     h1 {
       font-size: inherit;
       text-transform: none;
+    }
+    @media (max-width: $bp-2) {
+      padding: 0;
+      height: 29px;
+      width: 47px;
+      font-size: 12px;
+      line-height: 15px;
+      border: none;
+      background: url('./assets/icons/tablet_bamboo.svg') no-repeat;
+      background-position: top 13px left 3.5px;
     }
   }
 
@@ -21,7 +43,18 @@
       flex: 1 1 auto;
       text-align: end;
     }
+    @media (max-width: $bp-2) {
+      display: none;
+    }
   }
 
+  &__burger {
+    display: none;
+    @media (max-width: $bp-2) {
+      display: block;
+      width: 18px;
+      height: 10px;
+    }
+  }
 }
 

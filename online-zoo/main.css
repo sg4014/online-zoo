@@ -509,18 +509,59 @@ h3 {
   max-width: 1600px;
   padding: 0px 220px;
 }
+@media (max-width: 1000px) {
+  [class*=__container] {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 640px) {
+  [class*=__container] {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 320px) {
+  [class*=__container] {
+    padding: 0px 10px;
+  }
+}
 
 .header {
   background: #000000;
+}
+@media (max-width: 640px) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+  }
 }
 .header__container {
   min-height: 80px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 640px) {
+  .header__container {
+    justify-content: space-between;
+    min-height: 0px;
+    height: 34px;
+  }
+}
 .header__logo h1 {
   font-size: inherit;
   text-transform: none;
+}
+@media (max-width: 640px) {
+  .header__logo {
+    padding: 0;
+    height: 29px;
+    width: 47px;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    background: url("./assets/icons/tablet_bamboo.svg") no-repeat;
+    background-position: top 13px left 3.5px;
+  }
 }
 .header__menu {
   margin-left: 63px;
@@ -530,10 +571,30 @@ h3 {
   flex: 1 1 auto;
   text-align: end;
 }
+@media (max-width: 640px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 640px) {
+  .header__burger {
+    display: block;
+    width: 18px;
+    height: 10px;
+  }
+}
 
 .menu__list {
   display: flex;
   gap: 58px;
+}
+@media (max-width: 1000px) {
+  .menu__list {
+    gap: 48px;
+  }
 }
 .menu__link_current {
   color: #f9804b;

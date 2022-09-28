@@ -505,11 +505,12 @@ h3 {
 }
 
 [class*=__container] {
+  overflow: hidden;
   margin: 0 auto;
   max-width: 1600px;
   padding: 0px 220px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1240px) {
   [class*=__container] {
     padding: 0px 30px;
   }
@@ -527,11 +528,11 @@ h3 {
 
 .header {
   background: #000000;
+  z-index: 10;
 }
 @media (max-width: 640px) {
   .header {
     position: fixed;
-    z-index: 10;
     width: 100%;
   }
 }
@@ -591,7 +592,7 @@ h3 {
   display: flex;
   gap: 58px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1240px) {
   .menu__list {
     gap: 48px;
   }
@@ -773,8 +774,15 @@ h3 {
 }
 @media (max-width: 1600px) {
   .hero {
+    min-height: 500px;
     background-size: 1600px 780px;
     background-position: bottom;
+  }
+}
+@media (max-width: 1240px) {
+  .hero {
+    background-size: 1240px 504px;
+    margin-top: -43px;
   }
 }
 .hero__container {
@@ -796,6 +804,16 @@ h3 {
   margin-top: 86px;
   margin-bottom: 60px;
 }
+@media (max-width: 1240px) {
+  .hero__title {
+    width: 400px;
+    height: 320px;
+    font-size: 85px;
+    line-height: 64px;
+    margin-bottom: 40px;
+    margin-right: 55px;
+  }
+}
 .hero__title span {
   color: #ffee2e;
 }
@@ -810,8 +828,21 @@ h3 {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   transform: translateZ(-10px);
 }
+@media (max-width: 1240px) {
+  .hero__title::before {
+    width: 367px;
+    height: 367px;
+    right: 95px;
+  }
+}
 .hero__btn {
   margin-right: 97px;
+}
+@media (max-width: 1240px) {
+  .hero__btn {
+    margin-right: 107px;
+    margin-bottom: 47px;
+  }
 }
 
 /* Backstage Section

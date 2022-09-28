@@ -12,6 +12,7 @@
 }
 
 [class*="__container"] {
+  overflow: hidden;
   margin: 0 auto;
   max-width: 1600px;
   padding: 0px 220px;

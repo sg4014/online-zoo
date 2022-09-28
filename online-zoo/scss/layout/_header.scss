@@ -2,9 +2,9 @@
 
 .header {
   background: #000000;
+  z-index: 10;
   @media (max-width: $bp-2) {
     position: fixed;
-    z-index: 10;
     width: 100%;
   }
 

@@ -9,8 +9,13 @@
   background-size: cover;
   background-position: center;
   @media (max-width: 1600px) {
+    min-height: 500px;
     background-size: 1600px 780px;
     background-position: bottom;
+  }
+  @media (max-width: $bp-1) {
+    background-size: $bp-1 504px;
+    margin-top: -43px;
   }
 
   &__container {
@@ -32,6 +37,14 @@
     color: #ffffff;
     margin-top: 86px;
     margin-bottom: 60px;
+    @media (max-width: $bp-1) {
+      width: 400px;
+      height: 320px;
+      font-size: 85px;
+      line-height: 64px;
+      margin-bottom: 40px;
+      margin-right: 55px;
+    }
     
     span {
       color: $yellow;
@@ -47,11 +60,20 @@
       border-radius: 50%;
       background: $orange_btn_grad;
       transform: translateZ(-10px);
+      @media (max-width: $bp-1) {
+        width: 367px;
+        height: 367px;
+        right: 95px;
+      }
     }
   }
 
   &__btn {
     margin-right: 97px;
+    @media (max-width: $bp-1) {
+      margin-right: 107px;
+      margin-bottom: 47px;
+    }
   }
 }
 

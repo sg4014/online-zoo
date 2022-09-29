@@ -25,8 +25,9 @@
     margin-top: 10px;
   }
   @media (max-width: $bp-mobile) {
-    background-size: cover;
-    height: 210px;
+    background-size: 100% 210px;
+    background-position: top;
+    height: 284px;
   }
 
   &__container {
@@ -70,7 +71,7 @@
       height: 102px;
       font-size: 27px;
       line-height: 20px;
-      margin-top: 64px;
+      margin: 64px 0px;
     }
     
     span {
@@ -117,7 +118,7 @@
       margin-top: -10px;
     }
     @media (max-width: $bp-mobile) {
-      display: none;
+      margin: 0 auto;
     }
   }
 }

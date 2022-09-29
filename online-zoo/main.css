@@ -796,8 +796,9 @@ h3 {
 }
 @media (max-width: 550px) {
   .hero {
-    background-size: cover;
-    height: 210px;
+    background-size: 100% 210px;
+    background-position: top;
+    height: 284px;
   }
 }
 .hero__container {
@@ -846,7 +847,7 @@ h3 {
     height: 102px;
     font-size: 27px;
     line-height: 20px;
-    margin-top: 64px;
+    margin: 64px 0px;
   }
 }
 .hero__title span {
@@ -902,7 +903,7 @@ h3 {
 }
 @media (max-width: 550px) {
   .hero__btn {
-    display: none;
+    margin: 0 auto;
   }
 }
 

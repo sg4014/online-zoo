@@ -130,34 +130,94 @@
   background: url('./assets/images/flower_foto1.jpg');
   background-repeat: no-repeat;
   background-position: right 0 top 12px;
+  @media (max-width: $bp-small-desktop) {
+    padding: 100px 0px 140px;
+    background: #ffffff;
+  }
+  @media (max-width: $bp-tablet) {
+    padding: 60px 0px 80px;
+    background: url('./assets/images/flower_foto1.jpg') no-repeat;
+    background-size: 171px 470px;
+    background-position: right -35px top -10px;
+  }
+  @media (max-width: 600px) {
+    background-position: right -80px top -10px;
+  }
+  @media (max-width: $bp-mobile) {
+    padding: 30px 0px 40px;
+    background-size: 105px 217px;
+    background-position: right -74px top -67px;
+  }
 
   &__container {
     display: flex;
     gap: 87px;
+    @media (max-width: $bp-small-desktop) {
+      gap: 31px;
+      align-items: center;
+    }
   }
 
   &__image {
     flex: 0 1 609px;
-    max-height: 403px;
+    height: 403px;
+    @media (max-width: $bp-small-desktop) {
+      flex: 0 1 455px;
+      height: 408px;
+    }
+    @media (max-width: $bp-tablet) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__text {
     flex: 0 1 465px;
+    @media (max-width: $bp-small-desktop) {
+      flex: 0 0 495px;
+    }
+    @media (max-width: $bp-tablet) {
+      flex: 0 0 300px;
+    }
   }
 
   &__title {
     font-weight: $fw-regular;
     margin-bottom: 20px;
+    @media (max-width: $bp-small-desktop) {
+      flex: 0 0 454px;
+    }
+    @media (max-width: $bp-tablet) {
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 10px;
+    }
   }
 
   &__paragraph1 {
     line-height: 130%;
     margin-bottom: 54px;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $bp-mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   &__subtitle {
     @extend %subtitle;
     margin-bottom: 34px;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: $bp-mobile) {
+      margin-bottom: 10px;
+    }
   }
 }
 

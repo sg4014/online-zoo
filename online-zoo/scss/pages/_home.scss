@@ -9,13 +9,24 @@
   background-size: cover;
   background-position: center;
   @media (max-width: 1600px) {
-    min-height: 500px;
-    background-size: 1600px 780px;
+    background-size: 100% 780px;
     background-position: bottom;
   }
-  @media (max-width: $bp-1) {
-    background-size: $bp-1 504px;
+  @media (max-width: $bp-small-desktop) {
+    min-height: 0;
+    height: 547px;
+    background-size: $bp-small-desktop 100%;
     margin-top: -43px;
+  }
+  @media (max-width: $bp-tablet) {
+    background-size: $bp-tablet 363px;
+    min-height: 0px;
+    height: 363px;
+    margin-top: 10px;
+  }
+  @media (max-width: $bp-mobile) {
+    background-size: cover;
+    height: 210px;
   }
 
   &__container {
@@ -37,13 +48,29 @@
     color: #ffffff;
     margin-top: 86px;
     margin-bottom: 60px;
-    @media (max-width: $bp-1) {
+    @media (max-width: $bp-small-desktop) {
       width: 400px;
       height: 320px;
       font-size: 85px;
       line-height: 64px;
       margin-bottom: 40px;
       margin-right: 55px;
+    }
+    @media (max-width: $bp-tablet) {
+      width: 256px;
+      height: 204px;
+      font-size: 54px;
+      line-height: 40px;
+      margin-right: 0px;
+      margin-top: 74px;
+      margin-bottom: 0px;
+    }
+    @media (max-width: $bp-mobile) {
+      width: 128px;
+      height: 102px;
+      font-size: 27px;
+      line-height: 20px;
+      margin-top: 64px;
     }
     
     span {
@@ -60,19 +87,37 @@
       border-radius: 50%;
       background: $orange_btn_grad;
       transform: translateZ(-10px);
-      @media (max-width: $bp-1) {
+      @media (max-width: $bp-small-desktop) {
         width: 367px;
         height: 367px;
         right: 95px;
+      }
+      @media (max-width: $bp-tablet) {
+        width: 237px;
+        height: 237px;
+        right: 50px;
+      }
+      @media (max-width: $bp-mobile) {
+        width: 120px;
+        height: 120px;
+        bottom: 0px;
+        right: 27px;
       }
     }
   }
 
   &__btn {
     margin-right: 97px;
-    @media (max-width: $bp-1) {
+    @media (max-width: $bp-small-desktop) {
       margin-right: 107px;
       margin-bottom: 47px;
+    }
+    @media (max-width: $bp-tablet) {
+      align-self: flex-start;
+      margin-top: -10px;
+    }
+    @media (max-width: $bp-mobile) {
+      display: none;
     }
   }
 }

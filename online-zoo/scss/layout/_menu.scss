@@ -4,7 +4,7 @@
   &__list {
     display: flex;
     gap: 58px;
-    @media (max-width: $bp-1) {
+    @media (max-width: $bp-small-desktop) {
       gap: 48px;
     }
   }

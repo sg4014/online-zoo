@@ -20,6 +20,6 @@ $orange_bg_grad: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FE
 $pink_grad: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 
 // Breakpoints
-$bp-1: 1240px;
-$bp-2: 640px;
-$bp-3: 320px;
+$bp-small-desktop: 1280px;
+$bp-tablet: 768px;
+$bp-mobile: 550px;

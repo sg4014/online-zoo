@@ -16,13 +16,13 @@
   margin: 0 auto;
   max-width: 1600px;
   padding: 0px 220px;
-  @media (max-width: $bp-1) {
+  @media (max-width: $bp-small-desktop) {
     padding: 0px 30px;
   }
-  @media (max-width: $bp-2) {
+  @media (max-width: $bp-tablet) {
     padding: 0px 20px;
   }
-  @media (max-width: $bp-3) {
+  @media (max-width: $bp-mobile) {
     padding: 0px 10px;
   }
 }

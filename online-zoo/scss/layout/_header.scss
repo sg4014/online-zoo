@@ -3,7 +3,7 @@
 .header {
   background: #000000;
   z-index: 10;
-  @media (max-width: $bp-2) {
+  @media (max-width: $bp-tablet) {
     position: fixed;
     width: 100%;
   }
@@ -12,7 +12,7 @@
     min-height: 80px;
     display: flex;
     align-items: center;
-    @media (max-width: $bp-2) {
+    @media (max-width: $bp-tablet) {
       justify-content: space-between;
       min-height: 0px;
       height: 34px;
@@ -24,7 +24,7 @@
       font-size: inherit;
       text-transform: none;
     }
-    @media (max-width: $bp-2) {
+    @media (max-width: $bp-tablet) {
       padding: 0;
       height: 29px;
       width: 47px;
@@ -43,14 +43,14 @@
       flex: 1 1 auto;
       text-align: end;
     }
-    @media (max-width: $bp-2) {
+    @media (max-width: $bp-tablet) {
       display: none;
     }
   }
 
   &__burger {
     display: none;
-    @media (max-width: $bp-2) {
+    @media (max-width: $bp-tablet) {
       display: block;
       width: 18px;
       height: 10px;

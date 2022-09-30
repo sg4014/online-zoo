@@ -11,6 +11,10 @@
     width: 294px;
     height: 354px;
   }
+  @media (max-width: $bp-slider-2) {
+    width: 285px;
+    height: 332px;
+  }
 
   &:hover {
     .animal-card__image img {
@@ -43,6 +47,9 @@
     @media (max-width: $bp-slider-1) {
       height: 294px;
     }
+    @media (max-width: $bp-slider-2) {
+      height: 285px;
+    }
   }
 
   &__title {
@@ -50,12 +57,20 @@
     font-size: 16px;
     line-height: 140%;
     text-transform: uppercase;
+    @media (max-width: $bp-slider-2) {
+      font-size: 12px;
+      line-height: 17px;
+    }
   }
 
   &__subtitle {
     font-weight: 300;
     font-size: 15px;
     line-height: 120%;
+    @media (max-width: $bp-slider-2) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__info {
@@ -64,6 +79,16 @@
     padding: 8px 12px 14px 16px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $bp-slider-2) {
+      padding: 6px 10px 14px 12px;
+    }
+  }
+
+  &__icon {
+    @media (max-width: $bp-slider-2) {
+      max-width: 38px;
+      max-height: 30px;
+    }
   }
 
   &::after {

@@ -25,9 +25,11 @@
     margin-top: 10px;
   }
   @media (max-width: $bp-mobile) {
-    background-size: 100% 210px;
-    background-position: top;
     height: 284px;
+    background-image: url('./assets/images/giant_panda.jpg'),
+                      url('./assets/images/flower_foto1_mobile.jpg');
+    background-size: 100% 210px, auto;
+    background-position: top, right bottom -190px;
   }
 
   &__container {
@@ -133,27 +135,32 @@
   background-position: right 0 top 12px;
   @media (max-width: $bp-small-desktop) {
     padding: 100px 0px 140px;
+  }
+  @media (max-width: 1280px) {
     background: #ffffff;
   }
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 999px) {
     padding: 60px 0px 80px;
-    background: url('./assets/images/flower_foto1.jpg') no-repeat;
-    background-size: 171px 470px;
-    background-position: right -35px top -10px;
+    background: url('./assets/images/flower_foto1_tablet.jpg') no-repeat;
+    background-position: right top;
   }
-  @media (max-width: 600px) {
-    background-position: right -80px top -10px;
+  @media (max-width: 620px) {
+    background-position: right -20px top;
+  }
+  @media (max-width: 596px) {
+    background-position: right -60px top;
   }
   @media (max-width: $bp-mobile) {
     padding: 30px 0px 40px;
-    background-size: 105px 217px;
-    background-position: right -74px top -67px;
+    background: url('./assets/images/flower_foto1_mobile.jpg') no-repeat;
+    background-position: right top -35px;
   }
 
   &__container {
     display: flex;
     gap: 87px;
     @media (max-width: $bp-small-desktop) {
+      height: 427px;
       gap: 31px;
       align-items: center;
     }
@@ -163,10 +170,10 @@
     flex: 0 1 609px;
     height: 403px;
     @media (max-width: $bp-small-desktop) {
-      flex: 0 1 455px;
+      flex: 0 0 455px;
       height: 408px;
     }
-    @media (max-width: $bp-tablet) {
+    @media (max-width: 999px) {
       display: none;
     }
 
@@ -179,9 +186,13 @@
   &__text {
     flex: 0 1 465px;
     @media (max-width: $bp-small-desktop) {
+      height: 100%;
+      flex: 0 0 454px;
+    }
+    @media (max-width: 999px) {
       flex: 0 0 495px;
     }
-    @media (max-width: $bp-tablet) {
+    @media (max-width: $bp-mobile) {
       flex: 0 0 300px;
     }
   }
@@ -189,10 +200,7 @@
   &__title {
     font-weight: $fw-regular;
     margin-bottom: 20px;
-    @media (max-width: $bp-small-desktop) {
-      flex: 0 0 454px;
-    }
-    @media (max-width: $bp-tablet) {
+    @media (max-width: $bp-mobile) {
       font-size: 24px;
       line-height: 120%;
       margin-bottom: 10px;

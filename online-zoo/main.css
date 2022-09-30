@@ -615,7 +615,7 @@ h3 {
   max-width: 1600px;
   padding: 0px 220px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   [class*=__container] {
     padding: 0px 30px;
   }
@@ -697,7 +697,7 @@ h3 {
   display: flex;
   gap: 58px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .menu__list {
     gap: 48px;
   }
@@ -883,11 +883,11 @@ h3 {
     background-position: bottom;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .hero {
     min-height: 0;
     height: 547px;
-    background-size: 1280px 100%;
+    background-size: 1440px 100%;
     margin-top: -43px;
   }
 }
@@ -901,9 +901,10 @@ h3 {
 }
 @media (max-width: 550px) {
   .hero {
-    background-size: 100% 210px;
-    background-position: top;
     height: 284px;
+    background-image: url("./assets/images/giant_panda.jpg"), url("./assets/images/flower_foto1_mobile.jpg");
+    background-size: 100% 210px, auto;
+    background-position: top, right bottom -190px;
   }
 }
 .hero__container {
@@ -925,7 +926,7 @@ h3 {
   margin-top: 86px;
   margin-bottom: 60px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .hero__title {
     width: 400px;
     height: 320px;
@@ -969,7 +970,7 @@ h3 {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   transform: translateZ(-10px);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .hero__title::before {
     width: 367px;
     height: 367px;
@@ -994,7 +995,7 @@ h3 {
 .hero__btn {
   margin-right: 97px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .hero__btn {
     margin-right: 107px;
     margin-bottom: 47px;
@@ -1021,38 +1022,47 @@ h3 {
   background-repeat: no-repeat;
   background-position: right 0 top 12px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .backstage {
     padding: 100px 0px 140px;
+  }
+}
+@media (max-width: 1280px) {
+  .backstage {
     background: #ffffff;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   .backstage {
     padding: 60px 0px 80px;
-    background: url("./assets/images/flower_foto1.jpg") no-repeat;
-    background-size: 171px 470px;
-    background-position: right -35px top -10px;
+    background: url("./assets/images/flower_foto1_tablet.jpg") no-repeat;
+    background-position: right top;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .backstage {
-    background-position: right -80px top -10px;
+    background-position: right -20px top;
+  }
+}
+@media (max-width: 596px) {
+  .backstage {
+    background-position: right -60px top;
   }
 }
 @media (max-width: 550px) {
   .backstage {
     padding: 30px 0px 40px;
-    background-size: 105px 217px;
-    background-position: right -74px top -67px;
+    background: url("./assets/images/flower_foto1_mobile.jpg") no-repeat;
+    background-position: right top -35px;
   }
 }
 .backstage__container {
   display: flex;
   gap: 87px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .backstage__container {
+    height: 427px;
     gap: 31px;
     align-items: center;
   }
@@ -1061,13 +1071,13 @@ h3 {
   flex: 0 1 609px;
   height: 403px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .backstage__image {
-    flex: 0 1 455px;
+    flex: 0 0 455px;
     height: 408px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   .backstage__image {
     display: none;
   }
@@ -1079,12 +1089,18 @@ h3 {
 .backstage__text {
   flex: 0 1 465px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
+  .backstage__text {
+    height: 100%;
+    flex: 0 0 454px;
+  }
+}
+@media (max-width: 999px) {
   .backstage__text {
     flex: 0 0 495px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .backstage__text {
     flex: 0 0 300px;
   }
@@ -1093,12 +1109,7 @@ h3 {
   font-weight: 400;
   margin-bottom: 20px;
 }
-@media (max-width: 1280px) {
-  .backstage__title {
-    flex: 0 0 454px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .backstage__title {
     font-size: 24px;
     line-height: 120%;

@@ -144,6 +144,12 @@ h3 {
   border-radius: 5px;
   color: #000000;
 }
+@media (max-width: 1439px) {
+  .animal-card {
+    width: 294px;
+    height: 354px;
+  }
+}
 .animal-card:hover .animal-card__image img {
   transition: all 0.3s;
   transform: scale(1.06);
@@ -160,13 +166,18 @@ h3 {
   z-index: 2;
 }
 .animal-card__image {
-  max-width: 366px;
+  max-width: 100%;
   height: 366px;
   overflow: hidden;
 }
 .animal-card__image img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1439px) {
+  .animal-card__image {
+    height: 294px;
+  }
 }
 .animal-card__title {
   font-weight: 500;
@@ -198,13 +209,25 @@ h3 {
 }
 
 .slider {
+  width: 1158px;
   position: relative;
 }
+@media (max-width: 1439px) {
+  .slider {
+    width: 941px;
+  }
+}
 .slider__items {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px 30px;
+}
+@media (max-width: 1439px) {
+  .slider__items {
+    gap: 90px 30px;
+  }
 }
 .slider__nav {
   display: flex;
@@ -213,6 +236,15 @@ h3 {
   width: 1324px;
   top: 403px;
   left: -82px;
+}
+@media (max-width: 1439px) {
+  .slider__nav {
+    width: 100%;
+    top: 368px;
+    left: 0px;
+    gap: 171px;
+    justify-content: center;
+  }
 }
 .slider__btn {
   width: 62px;
@@ -1036,8 +1068,18 @@ h3 {
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
 }
+@media (max-width: 1599px) {
+  .pets {
+    background-image: url("./assets/images/palm_foto_sm-desktop.jpg"), url("./assets/images/strelitzia.jpg");
+    min-height: 1075px;
+    background-size: auto, 241px 180px;
+  }
+}
+.pets__container {
+  padding: 0px 30px;
+}
 .pets__slider {
-  margin-bottom: 80px;
+  margin: 0px auto 80px;
 }
 .pets__btn {
   margin: 0 auto 100px;

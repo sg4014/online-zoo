@@ -1,13 +1,21 @@
 @use '../abstracts/variables' as *;
 
 .slider {
+  width: 1158px;
   position: relative;
+  @media (max-width: $bp-slider-1) {
+    width: 941px;
+  }
 
   &__items {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px 30px;
+    @media (max-width: $bp-slider-1) {
+      gap: 90px 30px;
+    }
   }
 
   &__nav {
@@ -17,6 +25,13 @@
     width: 1324px;
     top: 403px;
     left: -82px;
+    @media (max-width: $bp-slider-1) {
+      width: 100%;
+      top: 368px;
+      left: 0px;
+      gap: 171px;
+      justify-content: center;
+    }
   }
 
   &__btn {

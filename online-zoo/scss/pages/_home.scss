@@ -230,9 +230,19 @@
                     url('./assets/images/strelitzia.jpg');
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
+  @media (max-width: $bp-responsive) {
+    background-image: url('./assets/images/palm_foto_sm-desktop.jpg'),
+                      url('./assets/images/strelitzia.jpg');
+    min-height: 1075px;
+    background-size: auto, 241px 180px;
+  }
+
+  &__container {
+    padding: 0px 30px;
+  }
 
   &__slider {
-    margin-bottom: 80px;
+    margin: 0px auto 80px;
   }
 
   &__btn {

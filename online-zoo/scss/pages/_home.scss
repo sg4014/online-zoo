@@ -433,6 +433,12 @@
     background-size: 200px auto;
     background-position: bottom -90px right;
   }
+  @media (max-width: $bp-testimonials-tablet) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-size: 140px auto;
+    background-position: bottom -90px right -20px;
+  } 
 
   &__title {
     font-size: 36px;
@@ -458,6 +464,13 @@
       }
       margin-bottom: 10px;
     }
+    @media (max-width: $bp-testimonials-tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 110px);
+      justify-items: center;
+      row-gap: 15px;
+      margin-bottom: 40px;
+    }
   }
 
   &__line-scroll {
@@ -466,6 +479,9 @@
     margin-bottom: 25px;
     @media (max-width: $bp-small-desktop) {
       margin-bottom: 48px;
+    }
+    @media (max-width: $bp-testimonials-tablet) {
+      display: none;
     }
 
     input {
@@ -501,5 +517,9 @@
 
   &__btn {
     border-radius: 5px;
+    @media (max-width: $bp-testimonials-tablet) {
+      margin: 0 auto;
+      max-width: 240px;
+    }
   }
 }

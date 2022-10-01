@@ -12,6 +12,11 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
+  @media (max-width: $bp-testimonials-tablet) {
+    padding: 15px 30px 10px 16px;
+    max-width: 600px;
+    max-height: 100%;
+  }
 
   &__meta {
     display: grid;

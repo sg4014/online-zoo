@@ -5,26 +5,45 @@
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 20px;
+    }
   }
 
   &__steps {
     display: flex;
     justify-content: space-between;
     gap: 130px;
+    @media (max-width: 999px) {
+      gap: 100px;
+    }
+    @media (max-width: $bp-tablet) {
+      gap: 42px;
+    }
   }
 
   &__step {
     position: relative;
     width: 168px;
     height: 244px;
-    &:not(:last-of-type)::after {
+    &:not(:first-of-type)::before {
       content: "";
       position: absolute;
       top: 62px;
-      left: calc(100% + 30px);
+      left: calc(65px - 100%);
       width: 69px;
       height: 36px;
       background: url('./assets/icons/big_right_arrow.svg');
+      @media (max-width: 999px) {
+        left: calc(80px - 100%);
+      }
+      @media (max-width: $bp-tablet) {
+        background: url('./assets/icons/curvy_green_arrow.svg') no-repeat;
+        width: 90px;
+        height: 35px;
+        left: -70px;
+        top: -16px;
+      }
     }
   }
 

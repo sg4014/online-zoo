@@ -439,6 +439,12 @@
     background-size: 140px auto;
     background-position: bottom -90px right -20px;
   } 
+  @media (max-width: $bp-mobile) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: url('./assets/images/leav_foto_mobile.jpg') no-repeat;
+    background-position: bottom -30px right;
+  }
 
   &__title {
     font-size: 36px;
@@ -448,6 +454,11 @@
     margin: 0 auto 47px;
     @media (max-width: $bp-small-desktop) {
       margin: 0 auto 30px;
+    }
+    @media (max-width: $bp-mobile) {
+      margin: 0 auto 20px;
+      font-size: 24px;
+      line-height: 28.8px;
     }
   }
 
@@ -466,10 +477,13 @@
     }
     @media (max-width: $bp-testimonials-tablet) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 110px);
+      grid-template-rows: repeat(3, 109px);
       justify-items: center;
       row-gap: 15px;
       margin-bottom: 40px;
+    }
+    @media (max-width: $bp-mobile) {
+      margin-bottom: 30px;
     }
   }
 

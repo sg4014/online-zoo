@@ -18,6 +18,9 @@
     max-width: 600px;
     max-height: 100%;
   }
+  @media (max-width: $bp-mobile) {
+    padding: 10px 30px 15px 12px;
+  }
 
   &::before {
     content: "";
@@ -54,11 +57,11 @@
   }
 
   &__location {
-    margin-right: 6px;
+    margin-right: 5px;
   }
 
   &__time {
-    margin-left: 5px;
+    margin-left: 3px;
   }
 
   &__text {

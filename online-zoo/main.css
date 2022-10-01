@@ -357,6 +357,11 @@ h3 {
     max-height: 100%;
   }
 }
+@media (max-width: 550px) {
+  .review {
+    padding: 10px 30px 15px 12px;
+  }
+}
 .review::before {
   content: "";
   width: calc(100% + 2px);
@@ -387,10 +392,10 @@ h3 {
   color: #bdbdbd;
 }
 .review__location {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 .review__time {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 .review__text {
   color: #767474;
@@ -1473,6 +1478,14 @@ h3 {
     background-position: bottom -90px right -20px;
   }
 }
+@media (max-width: 550px) {
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: url("./assets/images/leav_foto_mobile.jpg") no-repeat;
+    background-position: bottom -30px right;
+  }
+}
 .testimonials__title {
   font-size: 36px;
   line-height: 130%;
@@ -1483,6 +1496,13 @@ h3 {
 @media (max-width: 1440px) {
   .testimonials__title {
     margin: 0 auto 30px;
+  }
+}
+@media (max-width: 550px) {
+  .testimonials__title {
+    margin: 0 auto 20px;
+    font-size: 24px;
+    line-height: 28.8px;
   }
 }
 .testimonials__reviews {
@@ -1504,10 +1524,15 @@ h3 {
 @media (max-width: 970px) {
   .testimonials__reviews {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 110px);
+    grid-template-rows: repeat(3, 109px);
     justify-items: center;
     row-gap: 15px;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .testimonials__reviews {
+    margin-bottom: 30px;
   }
 }
 .testimonials__line-scroll {

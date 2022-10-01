@@ -426,6 +426,13 @@
   padding-bottom: 180px;
   background: url('./assets/images/leav_foto.jpg') no-repeat;
   background-position: bottom -130px right;
+  @media (max-width: $bp-small-desktop) {
+    min-height: 0px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background-size: 200px auto;
+    background-position: bottom -90px right;
+  }
 
   &__title {
     font-size: 36px;
@@ -433,19 +440,33 @@
     color: $black_blue;
     text-align: center;
     margin: 0 auto 47px;
+    @media (max-width: $bp-small-desktop) {
+      margin: 0 auto 30px;
+    }
   }
 
   &__reviews {
     display: grid;
     grid-template-columns: repeat(4, 268px);
+    justify-content: center;
     gap: 30px;
     margin-bottom: 15px;
+    @media (max-width: $bp-small-desktop) {
+      grid-template-columns: repeat(3, 293px);
+      & > *:last-of-type {
+        display: none;
+      }
+      margin-bottom: 10px;
+    }
   }
 
   &__line-scroll {
     width: 100%;
     padding: 0 280px;
     margin-bottom: 25px;
+    @media (max-width: $bp-small-desktop) {
+      margin-bottom: 48px;
+    }
 
     input {
       -webkit-appearance: none;
@@ -455,6 +476,9 @@
       border-radius: 5px;
       outline: 1px solid #fe9013;
       cursor: pointer;
+      @media (max-width: $bp-small-desktop) {
+        width: 390px;
+      }
       &:hover {
         outline-color: $orange_dark;
       }
@@ -465,6 +489,9 @@
         width: 115px;
         background: #FE9013;
         border-radius: 5px;
+        @media (max-width: $bp-small-desktop) {
+          width: 75px;
+        }
         &:hover {
           background: $orange_dark;
         }

@@ -337,6 +337,7 @@ h3 {
 }
 
 .review {
+  position: relative;
   padding: 15px 22px 21px 16px;
   max-width: 293px;
   max-height: 391px;
@@ -355,6 +356,17 @@ h3 {
     max-width: 600px;
     max-height: 100%;
   }
+}
+.review::before {
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background: linear-gradient(#febdab 74%, #f3a9f8 66%, #e0d8f0 100%, #eaf7fe 100%, #eaf7fe 100%);
+  z-index: -10;
+  border-radius: inherit;
 }
 .review__meta {
   display: grid;

@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media (max-width: $bp-footer-tablet) {
+      gap: 20px;
+    }
   }
 
   &__link {
@@ -32,6 +35,12 @@
     img {
       width: 16px;
       height: 16px;
+    }
+  }
+
+  &__label {
+    @media (max-width: $bp-footer-tablet) {
+      display: none;
     }
   }
 }

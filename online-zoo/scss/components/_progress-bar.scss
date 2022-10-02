@@ -2,6 +2,7 @@
 
 $padding-desktop: 26px;
 $padding-sm-desktop: 10px;
+$padding-tablet: 35px;
 
 .progress-bar {
   width: 100%;
@@ -13,10 +14,16 @@ $padding-sm-desktop: 10px;
   align-items: center;
   gap: 120px;
   transform-style: preserve-3d;
-  @media(max-width: $bp-responsive) {
+  @media (max-width: $bp-responsive) {
     max-width: 810px;
     padding: 0px $padding-sm-desktop;
   }
+  @media (max-width: $bp-donation-tablet) {
+    max-width: 600px;
+    padding: 0px $padding-tablet;
+  }
+
+
   &::after {
     content: "";
     position: absolute;
@@ -30,6 +37,10 @@ $padding-sm-desktop: 10px;
       left: $padding-sm-desktop;
       right: $padding-sm-desktop;
     } 
+    @media (max-width: $bp-donation-tablet) {
+      left: $padding-tablet;
+      right: $padding-tablet;
+    }
   }
 
   &__option {
@@ -39,6 +50,12 @@ $padding-sm-desktop: 10px;
     flex-direction: column;
     @media (max-width: $bp-responsive) {
       &:nth-of-type(1) {
+        display: none;
+      }
+    }
+    @media (max-width: $bp-donation-tablet) {
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
         display: none;
       }
     }
@@ -113,6 +130,10 @@ $padding-sm-desktop: 10px;
       cursor: pointer;
       @media (max-width: $bp-responsive) {
         left: -10px;
+      }
+      @media (max-width: $bp-donation-tablet) {
+        top: 32px;
+        left: -20px;
       }
     }
   }

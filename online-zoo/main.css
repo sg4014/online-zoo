@@ -1979,9 +1979,24 @@ h3 {
 .panda {
   max-height: 390px;
 }
+@media (max-height: 638px) {
+  .panda {
+    max-height: 221px;
+  }
+}
 .panda__image {
   position: relative;
   height: 390px;
+}
+@media (max-width: 920px) {
+  .panda__image {
+    height: 369px;
+  }
+}
+@media (max-width: 638px) {
+  .panda__image {
+    height: 221px;
+  }
 }
 .panda__image img {
   position: absolute;

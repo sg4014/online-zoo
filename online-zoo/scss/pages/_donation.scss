@@ -2,10 +2,19 @@
 
 .panda {
   max-height: 390px;
-
+  @media (max-height: $bp-donation-mobile) {
+    max-height: 221px;
+  }
+  
   &__image {
     position: relative;
     height: 390px;
+    @media (max-width: $bp-donation-tablet) {
+      height: 369px;
+    }
+    @media (max-width: $bp-donation-mobile) {
+      height: 221px;
+    }
 
     img {
       position: absolute;

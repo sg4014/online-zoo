@@ -407,6 +407,14 @@ h3 {
   border-radius: 20px;
   padding: 40px 92px 62px;
 }
+@media (max-width: 1599px) {
+  .donation-widget {
+    padding: 20px 0px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .donation-widget__title {
   font-weight: 400;
   font-size: 48px;
@@ -414,6 +422,11 @@ h3 {
   text-align: center;
   color: #FE9013;
   margin-bottom: 20px;
+}
+@media (max-width: 1599px) {
+  .donation-widget__title {
+    margin-bottom: 10px;
+  }
 }
 .donation-widget__subtitle {
   font-weight: 400;
@@ -482,6 +495,11 @@ h3 {
   border-radius: 2px;
   color: #000000;
 }
+@media (max-width: 1599px) {
+  .donation-widget__another-amount {
+    margin: 25px auto 30px;
+  }
+}
 .donation-widget__another-amount input {
   background: inherit;
   outline: none;
@@ -547,6 +565,12 @@ h3 {
   gap: 120px;
   transform-style: preserve-3d;
 }
+@media (max-width: 1599px) {
+  .progress-bar {
+    max-width: 810px;
+    padding: 0px 10px;
+  }
+}
 .progress-bar::after {
   content: "";
   position: absolute;
@@ -557,11 +581,22 @@ h3 {
   background: #72828E;
   transform: translateZ(10px);
 }
+@media (max-width: 1599px) {
+  .progress-bar::after {
+    left: 10px;
+    right: 10px;
+  }
+}
 .progress-bar__option {
   transform: translateZ(20px);
   position: relative;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1599px) {
+  .progress-bar__option:nth-of-type(1) {
+    display: none;
+  }
 }
 .progress-bar__option:hover input {
   background: #fe9013;
@@ -620,6 +655,11 @@ h3 {
   top: 30px;
   left: -25px;
   cursor: pointer;
+}
+@media (max-width: 1599px) {
+  .progress-bar__option label {
+    left: -10px;
+  }
 }
 
 .wrapper {
@@ -1745,6 +1785,11 @@ h3 {
   padding-top: 40px;
   padding-bottom: 180px;
 }
+@media (max-width: 1599px) {
+  .donate {
+    padding-bottom: 30px;
+  }
+}
 .donate__title {
   font-style: normal;
   font-weight: 400;
@@ -1752,6 +1797,12 @@ h3 {
   line-height: 130%;
   color: #FFFFFF;
   margin-bottom: 10px;
+}
+@media (max-width: 1599px) {
+  .donate__title {
+    max-width: 780px;
+    margin-bottom: 30px;
+  }
 }
 .donate__subtitle {
   font-style: normal;
@@ -1761,6 +1812,11 @@ h3 {
   color: #FFFFFF;
   margin-bottom: 40px;
 }
+@media (max-width: 1599px) {
+  .donate__subtitle {
+    margin-bottom: 45px;
+  }
+}
 .donate__info {
   font-style: normal;
   font-weight: 400;
@@ -1768,6 +1824,11 @@ h3 {
   line-height: 130%;
   color: #FE9013;
   margin-bottom: 60px;
+}
+@media (max-width: 1599px) {
+  .donate__info {
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

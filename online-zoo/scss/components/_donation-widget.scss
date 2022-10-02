@@ -4,6 +4,12 @@
   background: $frosted_glass_white;
   border-radius: 20px;
   padding: 40px 92px 62px;
+  @media (max-width: $bp-responsive) {
+    padding: 20px 0px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     font-weight: 400;
@@ -12,6 +18,9 @@
     text-align: center;
     color: #FE9013;
     margin-bottom: 20px;
+    @media (max-width: $bp-responsive) {
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
@@ -85,6 +94,9 @@
     background: transparent;
     border: 1px solid #929699;
     border-radius: 2px;
+    @media (max-width: $bp-responsive) {
+      margin: 25px auto 30px;
+    }
     
     color: #000000;
 

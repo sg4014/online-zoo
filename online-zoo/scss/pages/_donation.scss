@@ -22,6 +22,9 @@
   background: $orange_bg_grad;
   padding-top: 40px;
   padding-bottom: 180px;
+  @media (max-width: $bp-responsive) {
+    padding-bottom: 30px;
+  }
 
   &__title {
     font-style: normal;
@@ -30,6 +33,10 @@
     line-height: 130%;
     color: #FFFFFF;
     margin-bottom: 10px;
+    @media (max-width: $bp-responsive) {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {
@@ -39,6 +46,9 @@
     line-height: 140%;
     color: #FFFFFF;
     margin-bottom: 40px;
+    @media (max-width: $bp-responsive) {
+      margin-bottom: 45px;
+    }
   }
 
   &__info {
@@ -48,6 +58,9 @@
     line-height: 130%;
     color: #FE9013;
     margin-bottom: 60px;
+    @media (max-width: $bp-responsive) {
+      margin-bottom: 40px;  
+    }
   }
 
   

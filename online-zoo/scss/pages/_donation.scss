@@ -29,6 +29,9 @@
     padding-top: 30px;
     padding-bottom: 46px;
   }
+  @media (max-width: $bp-donation-mobile) {
+    padding-bottom: 20px;
+  }
 
   &__title {
     font-style: normal;
@@ -61,6 +64,9 @@
     @media (max-width: $bp-donation-tablet) {
       margin-bottom: 30px;
     }
+    @media (max-width: $bp-donation-mobile) {
+      margin-bottom: 28px;
+    }
   }
 
   &__info {
@@ -75,6 +81,11 @@
     }
     @media (max-width: $bp-donation-tablet) {
       margin-bottom: 30px;
+    }
+    @media (max-width: $bp-donation-mobile) {
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 28px;
     }
   }
 

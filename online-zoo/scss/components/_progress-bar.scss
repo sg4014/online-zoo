@@ -3,6 +3,7 @@
 $padding-desktop: 26px;
 $padding-sm-desktop: 10px;
 $padding-tablet: 35px;
+$padding-mobile: 18px;
 
 .progress-bar {
   width: 100%;
@@ -22,6 +23,13 @@ $padding-tablet: 35px;
     max-width: 600px;
     padding: 0px $padding-tablet;
   }
+  @media (max-width: $bp-donation-mobile) {
+    border-radius: 1px;
+    height: 14px;
+    max-width: 300px;  
+    padding: 0px $padding-mobile;
+    gap: 60px;
+  }
 
 
   &::after {
@@ -40,6 +48,11 @@ $padding-tablet: 35px;
     @media (max-width: $bp-donation-tablet) {
       left: $padding-tablet;
       right: $padding-tablet;
+    }
+    @media (max-width: $bp-donation-mobile) {
+      top: 6px;
+      left: $padding-mobile;
+      right: $padding-mobile;
     }
   }
 
@@ -78,6 +91,10 @@ $padding-tablet: 35px;
       height: 10px;
       border-radius: 50%;
       background: yellow;
+      @media (max-width: $bp-donation-mobile) {
+        width: 5px;
+        height: 5px;
+      }
       &:checked {
         &::before {
           display:block;
@@ -95,6 +112,13 @@ $padding-tablet: 35px;
         width: 40px;
         height: 40px;
         background: url('../../assets/icons/roller_icon.svg');
+        @media (max-width: $bp-donation-mobile) {
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+          top: -7px;
+          left: -7px;
+        }
       }
 
       &::after {
@@ -104,6 +128,12 @@ $padding-tablet: 35px;
         height: 50px;
         top: -20px;
         left: -20px;
+        @media (max-width: $bp-donation-mobile) {
+          width: 35px;
+          height: 35px;
+          top: -15px;
+          left: -15px;
+        }
         &:hover {
           input {
             background: #fe9013;
@@ -134,6 +164,11 @@ $padding-tablet: 35px;
       @media (max-width: $bp-donation-tablet) {
         top: 32px;
         left: -20px;
+      }
+      @media (max-width: $bp-donation-mobile) {
+        font-size: 13px;
+        top: 15px;
+        left: -10px;
       }
     }
   }

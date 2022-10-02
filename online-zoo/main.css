@@ -1277,6 +1277,12 @@ h3 {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .backstage__container {
+    height: auto;
+    justify-content: flex-start;
+  }
+}
 .backstage__image {
   flex: 0 1 609px;
   height: 403px;
@@ -1307,6 +1313,7 @@ h3 {
 }
 @media (max-width: 999px) {
   .backstage__text {
+    height: auto;
     flex: 0 0 495px;
   }
 }

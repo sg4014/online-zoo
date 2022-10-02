@@ -164,6 +164,10 @@
       gap: 31px;
       align-items: center;
     }
+    @media (max-width: $bp-tablet) {
+      height: auto;
+      justify-content: flex-start;
+    }
   }
 
   &__image {
@@ -190,6 +194,7 @@
       flex: 0 0 454px;
     }
     @media (max-width: 999px) {
+      height: auto;
       flex: 0 0 495px;
     }
     @media (max-width: $bp-mobile) {

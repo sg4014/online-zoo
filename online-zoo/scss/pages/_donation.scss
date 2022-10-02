@@ -2,15 +2,13 @@
 
 .panda {
   max-height: 390px;
-  @media (max-height: $bp-donation-mobile) {
-    max-height: 221px;
-  }
-  
+
   &__image {
+    overflow: hidden;
     position: relative;
     height: 390px;
     @media (max-width: $bp-donation-tablet) {
-      height: 369px;
+      height: 369px
     }
     @media (max-width: $bp-donation-mobile) {
       height: 221px;
@@ -23,6 +21,27 @@
       top: 0;
       left: 0;
       object-fit: cover;
+      @media (max-width: 1600px) {
+        object-fit: fill;
+        width: 1600px;
+      }
+      @media (max-width: $bp-small-desktop) {
+        left: -50px;
+      }
+      @media (max-width: 1200px) {
+        left: -170px;
+      }
+      @media (max-width: $bp-donation-tablet) {
+        transform: scale(0.95);
+        width: 1373px;
+        top: 20px;
+        left: -280px;
+      }
+      @media (max-width: $bp-donation-mobile) {
+        width: 766px;
+        left: -150px;
+        top: 25px;
+      }
     }
   }
 }

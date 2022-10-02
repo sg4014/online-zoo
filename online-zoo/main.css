@@ -1979,12 +1979,8 @@ h3 {
 .panda {
   max-height: 390px;
 }
-@media (max-height: 638px) {
-  .panda {
-    max-height: 221px;
-  }
-}
 .panda__image {
+  overflow: hidden;
   position: relative;
   height: 390px;
 }
@@ -2005,6 +2001,37 @@ h3 {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+@media (max-width: 1600px) {
+  .panda__image img {
+    object-fit: fill;
+    width: 1600px;
+  }
+}
+@media (max-width: 1440px) {
+  .panda__image img {
+    left: -50px;
+  }
+}
+@media (max-width: 1200px) {
+  .panda__image img {
+    left: -170px;
+  }
+}
+@media (max-width: 920px) {
+  .panda__image img {
+    transform: scale(0.95);
+    width: 1373px;
+    top: 20px;
+    left: -280px;
+  }
+}
+@media (max-width: 638px) {
+  .panda__image img {
+    width: 766px;
+    left: -150px;
+    top: 25px;
+  }
 }
 
 .donate {

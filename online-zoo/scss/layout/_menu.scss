@@ -1,15 +1,41 @@
 @use '../abstracts/variables' as *;
 
 .menu {
+  transition: 0.3s;
+  @media (max-width: $bp-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 330px;
+    padding: 10px 10px 40px;
+    background: white;
+  }
+
+  &_active {
+    right: 0;
+  }
+
   &__list {
     display: flex;
     gap: 58px;
     @media (max-width: $bp-small-desktop) {
       gap: 48px;
     }
+    @media (max-width: $bp-tablet) {
+      grid-column: 1;
+      grid-row: 2;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__link {
+    @media (max-width: $bp-tablet) {
+      color: $black_blue;
+    }
     &_current {
       color: $orange;
       pointer-events: none;
@@ -18,4 +44,58 @@
       color: $green;
     }
   }
+
+  &__logo {
+    display: none;
+    @media (max-width: $bp-tablet) {
+      grid-row: 1;
+      grid-column: 1;
+      display: block;
+      width: 65px;
+      height: 41.6px;
+      padding: 3px 4px;
+      font-size: 15px;
+      line-height: 120%;
+      border: 1px solid #FE9013;
+      color: #fe9013;
+      background: url('./assets/icons/orange_bamboo.svg') no-repeat;
+      background-position: bottom 5px left 8px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__close {
+    justify-self: center;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* Create dark overlay */
+.overlay {
+  display: none;
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $black_blue;
+  opacity: 0.6;
+  z-index: 5;
+
+  &_active {
+    display: block;
+  }
+}
+
+/* Forbid scrolling when menu is opened */
+.scroll-locked {
+  overflow: hidden;
 }

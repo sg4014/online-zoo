@@ -1,3 +1,5 @@
+import activateMenu from './js/menu.js';
+
 /* Donation Progress Bar
 ================================================== */
 function changeCheckedRadio() {
@@ -11,3 +13,5 @@ function changeCheckedRadio() {
 
 window.addEventListener('load', changeCheckedRadio);
 window.addEventListener('resize', changeCheckedRadio);
+
+activateMenu();

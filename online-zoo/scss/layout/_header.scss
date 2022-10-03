@@ -42,14 +42,16 @@
     .menu__list > li:last-of-type {
       flex: 1 1 auto;
       text-align: end;
+      @media (max-width: $bp-tablet) {
+        text-align: start;
+      }
     }
-    @media (max-width: $bp-tablet) {
-      display: none;
-    }
+    
   }
 
   &__burger {
     display: none;
+    cursor: pointer;
     @media (max-width: $bp-tablet) {
       display: block;
       width: 18px;

@@ -32,15 +32,13 @@
         left: -170px;
       }
       @media (max-width: $bp-donation-tablet) {
-        transform: scale(0.95);
         width: 1373px;
-        top: 20px;
         left: -280px;
       }
       @media (max-width: $bp-donation-mobile) {
         width: 766px;
+        top: 0px;
         left: -150px;
-        top: 25px;
       }
     }
   }

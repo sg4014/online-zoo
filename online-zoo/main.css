@@ -809,7 +809,7 @@ h3 {
   left: -15px;
   width: 40px;
   height: 40px;
-  background: url("../../assets/icons/roller_icon.svg");
+  background: url("./assets/icons/roller_icon.svg");
 }
 @media (max-width: 638px) {
   .progress-bar__option input::before {
@@ -2020,17 +2020,15 @@ h3 {
 }
 @media (max-width: 920px) {
   .panda__image img {
-    transform: scale(0.95);
     width: 1373px;
-    top: 20px;
     left: -280px;
   }
 }
 @media (max-width: 638px) {
   .panda__image img {
     width: 766px;
+    top: 0px;
     left: -150px;
-    top: 25px;
   }
 }
 

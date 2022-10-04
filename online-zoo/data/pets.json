@@ -1,0 +1,38 @@
+[
+  {
+    "name": "giant pandas",
+    "img": "./assets/images/cards/pandas.jpg",
+    "location": "Native to Southwest China",
+    "icon": "./assets/icons/banana-bamboo_icon.svg"
+  },
+  {
+    "name": "eagles",
+    "img": "./assets/images/cards/eagle.jpg",
+    "location": "Native to South America",
+    "icon": "./assets/icons/meat-fish_icon.svg"
+  },
+  {
+    "name": "gorillas",
+    "img": "./assets/images/cards/gorilla.jpg",
+    "location": "Native to Congo",
+    "icon": "./assets/icons/banana-bamboo_icon.svg"
+  },
+  {
+    "name": "two-toed sloth",
+    "img": "./assets/images/cards/sloth.jpg",
+    "location": "Mesoamerica, South America",
+    "icon": "./assets/icons/banana-bamboo_icon.svg"
+  },
+  {
+    "name": "cheetahs",
+    "img": "./assets/images/cards/cheetah.jpg",
+    "location": "Native to Africa",
+    "icon": "./assets/icons/meat-fish_icon.svg"
+  },
+  {
+    "name": "penguins",
+    "img": "./assets/images/cards/penguin.jpg",
+    "location": "Native to Antarctica",
+    "icon": "./assets/icons/meat-fish_icon.svg"
+  }
+]

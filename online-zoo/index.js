@@ -1,4 +1,6 @@
 import activateMenu from './js/menu.js';
+import activeCarousel from './js/carousel.js';
+import activateCarousel from './js/carousel.js';
 
 /* Donation Progress Bar
 ================================================== */
@@ -15,3 +17,4 @@ window.addEventListener('load', changeCheckedRadio);
 window.addEventListener('resize', changeCheckedRadio);
 
 activateMenu();
+activateCarousel();

@@ -10,7 +10,7 @@ export default function activateCarousel() {
 
   util.shuffleArray(petsCards);
   centerSlide.append(
-    ...petsCards.map(pet => pet.cloneNode(true))
+    ...petsCards.slice(0, 6).map(pet => pet.cloneNode(true))
   );
 
   // If viewport width <640px, don't add carousel.
@@ -82,7 +82,7 @@ export default function activateCarousel() {
   function moveLeft() {
     util.shuffleArray(petsCards);
     leftSlide.append(
-      ...petsCards.map(pet => pet.cloneNode(true))
+      ...petsCards.slice(0, 6).map(pet => pet.cloneNode(true))
     );
 
     slidesContainer.classList.add('transition-left');
@@ -94,7 +94,7 @@ export default function activateCarousel() {
   function moveRight() {
     util.shuffleArray(petsCards);
     rightSlide.append(
-      ...petsCards.map(pet => pet.cloneNode(true))
+      ...petsCards.slice(0, 6).map(pet => pet.cloneNode(true))
     );
 
     slidesContainer.classList.add('transition-right');

@@ -34,5 +34,17 @@
     "img": "./assets/images/cards/penguin.jpg",
     "location": "Native to Antarctica",
     "icon": "./assets/icons/meat-fish_icon.svg"
+  },
+  {
+    "name": "alligators",
+    "img": "./assets/images/cards/alligator.jpg",
+    "location": "Native to Southeastern U. S.",
+    "icon": "./assets/icons/meat-fish_icon.svg"
+  },
+  {
+    "name": "gorillas",
+    "img": "./assets/images/cards/gorilla_2.jpg",
+    "location": "Native to Congo",
+    "icon": "./assets/icons/banana-bamboo_icon.svg"
   }
 ]

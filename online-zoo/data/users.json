@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Michael John",
+    "avatar": "./assets/images/users/user_icon.svg",
+    "location": "Local Austria"
+  },
+  {
+    "name": "Oskar Samborsky",
+    "avatar": "./assets/images/users/user_1.svg",
+    "location": "Local Austria"
+  },
+  {
+    "name": "Fredericka Michelin",
+    "avatar": "./assets/images/users/user_3.svg",
+    "location": "Local Austria"
+  },
+  {
+    "name": "Mila Riksha",
+    "avatar": "./assets/images/users/user_2.svg",
+    "location": "Local Austria"
+  },
+  {
+    "name": "Zhong Xina",
+    "avatar": "./assets/images/users/xina.png",
+    "location": "China"
+  },
+  {
+    "name": "Super Idol",
+    "avatar": "./assets/images/users/super_idol.jpg",
+    "location": "Alaska"
+  },
+  {
+    "name": "Doctor Livesey",
+    "avatar": "./assets/images/users/livesey.jpg",
+    "location": "DELETED"
+  },
+  {
+    "name": "George",
+    "avatar": "./assets/images/users/wise_tree.jpg",
+    "location": "California"
+  },
+  {
+    "name": "George",
+    "avatar": "./assets/images/users/wise_tree.jpg",
+    "location": "California"
+  },
+  {
+    "name": "George",
+    "avatar": "./assets/images/users/wise_tree.jpg",
+    "location": "California"
+  },
+  {
+    "name": "George",
+    "avatar": "./assets/images/users/wise_tree.jpg",
+    "location": "California"
+  }
+
+]

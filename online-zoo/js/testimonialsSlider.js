@@ -18,10 +18,10 @@ export default function activateTestimonialsSlider() {
   // Create review nodes
   const times = ['Today', 'Yesterday', 'Last Month'];
   const reviews = users.map(user => getReview(user));
+  util.shuffleArray(reviews);
 
   // Append review nodes to the reviews container
   const reviewsContainer = document.querySelector('.testimonials__reviews-container');
-
   reviewsContainer.append(...reviews);
 
   //================================================
@@ -34,9 +34,9 @@ export default function activateTestimonialsSlider() {
   function moveTo(value) {
     const reviewWidth = reviewsContainer.querySelector('.review').offsetWidth;
     const gap = 30;
-    const moveValue = reviewWidth + gap;
+    const factor = reviewWidth + gap;
 
-    reviewsContainer.style.left = (-1 * moveValue * value) + 'px';
+    reviewsContainer.style.left = (-1 * factor * value) + 'px';
   }
 
   function getReview(user) {

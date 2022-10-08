@@ -1,0 +1,40 @@
+.popup {
+  &__overlay {
+    display: none;
+    
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+
+    &_active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__review {
+    position: relative;
+    width: 267px;
+    height: 393px;
+    @media (max-width: 390px) {
+      left: -10px;
+    }
+
+    &::after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: url('./assets/icons/x_icon.svg');
+      position: absolute;
+      left: calc(100% + 10px);
+      top: -7px;
+      pointer-events: none;
+    }
+  }
+}

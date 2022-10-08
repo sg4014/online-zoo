@@ -3,13 +3,15 @@ export default function activateMenu() {
   const burgerIcon = document.querySelector('.header__burger');
   const closeBtn = document.querySelector('.menu__close');
   const menu = document.querySelector('.menu');
-  const overlay = document.querySelector('.overlay');
 
+  const overlay = document.createElement('div');
+  overlay.className = 'menu__overlay';
+  document.body.querySelector('footer').after(overlay);
 
   /*--Open menu on burger click------------------------------------------------------------------*/
   burgerIcon.addEventListener('click', () => {
     menu.classList.add('menu_active');                     // Slide-in (slide-out) menu
-    overlay.classList.toggle('overlay_active');            // Show (hide) overlay
+    overlay.classList.toggle('menu__overlay_active');            // Show (hide) overlay
     body.classList.toggle('scroll-locked');                // Prohibit (allow) scrolling
   });
   
@@ -21,7 +23,7 @@ export default function activateMenu() {
       event.target != menu
       ) {
       menu.classList.remove('menu_active');                 // Slide-out menu
-      overlay.classList.remove('overlay_active');           // Hide overlay
+      overlay.classList.remove('menu__overlay_active');           // Hide overlay
       body.classList.remove('scroll-locked');               // Allow scrolling
     }
   });
@@ -30,7 +32,7 @@ export default function activateMenu() {
   ================================================== */
   closeBtn.addEventListener('click', () => {
     menu.classList.remove('menu_active');                 // Slide-out menu
-    overlay.classList.remove('overlay_active');           // Hide overlay
+    overlay.classList.remove('menu__overlay_active');           // Hide overlay
     body.classList.remove('scroll-locked');               // Allow scrolling
   })
 }

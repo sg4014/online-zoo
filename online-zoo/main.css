@@ -936,6 +936,43 @@ h3 {
   }
 }
 
+.popup__overlay {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+.popup__overlay_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__review {
+  position: relative;
+  width: 267px;
+  height: 393px;
+}
+@media (max-width: 390px) {
+  .popup__review {
+    left: -10px;
+  }
+}
+.popup__review::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("./assets/icons/x_icon.svg");
+  position: absolute;
+  left: calc(100% + 10px);
+  top: -7px;
+  pointer-events: none;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1119,7 +1156,7 @@ h3 {
 }
 
 /* Create dark overlay */
-.overlay {
+.menu__overlay {
   display: none;
   content: "";
   position: fixed;
@@ -1131,7 +1168,7 @@ h3 {
   opacity: 0.6;
   z-index: 5;
 }
-.overlay_active {
+.menu__overlay_active {
   display: block;
 }
 

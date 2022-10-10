@@ -794,7 +794,7 @@ h3 {
 .progress-bar::after {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 26px;
   right: 30px;
   height: 2px;
@@ -815,7 +815,7 @@ h3 {
 }
 @media (max-width: 638px) {
   .progress-bar::after {
-    top: 6px;
+    top: 4px;
     left: 18px;
     right: 18px;
   }

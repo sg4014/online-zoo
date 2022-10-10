@@ -35,7 +35,7 @@ $padding-mobile: 18px;
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: $padding-desktop;
     right: 30px;
     height: 2px;
@@ -50,7 +50,7 @@ $padding-mobile: 18px;
       right: $padding-tablet;
     }
     @media (max-width: $bp-donation-mobile) {
-      top: 6px;
+      top: 4px;
       left: $padding-mobile;
       right: $padding-mobile;
     }
